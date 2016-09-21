@@ -5,8 +5,10 @@
 </div>
 
 <div>
-  <a routerLink="/emails">Emails</a>
-  <a routerLink="/contacts">Contacts</a>
+  <a [routerLink]="['emails']">Emails</a>
+  <a [routerLink]="['contacts']">Contacts</a>
+  <a [routerLink]="[{outlets: {aux: ['auxiliary']}}]">Open an auxiliary route</a>
 </div>
 
 <router-outlet></router-outlet>
+<router-outlet name="aux"></router-outlet>

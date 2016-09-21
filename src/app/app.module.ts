@@ -16,6 +16,7 @@ import { CounterReducer } from './reducers/counter.reducer';
 // our components
 import { AppComponent } from './app.component';
 import { EmailsComponent } from './emails/emails.component';
+import { AuxiliaryComponent } from './auxiliary/auxiliary.component';
 
 // routes
 import routes from './app.routes';
@@ -23,7 +24,8 @@ import routes from './app.routes';
 @NgModule({
   declarations: [
     AppComponent,
-    EmailsComponent
+    EmailsComponent,
+    AuxiliaryComponent
   ],
   imports: [
     BrowserModule,
